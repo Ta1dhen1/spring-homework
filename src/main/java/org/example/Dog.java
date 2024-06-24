@@ -1,5 +1,4 @@
 package org.example;
-
 import lombok.Getter;
 import org.springframework.beans.factory.annotation.Value;
 
