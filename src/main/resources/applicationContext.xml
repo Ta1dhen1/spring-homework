@@ -29,5 +29,4 @@
     <bean id="Parrot2" class="org.example.Parrot">
         <constructor-arg value="${parrot2.name}"/>
     </bean>
-    <!--я не стал писать scope prototype-->
 </beans>
