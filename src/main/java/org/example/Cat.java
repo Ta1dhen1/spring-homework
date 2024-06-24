@@ -1,17 +1,14 @@
 package org.example;
 
-import com.sun.security.auth.NTSid;
 import lombok.Getter;
-import lombok.Setter;
-
-import java.security.PublicKey;
-import java.util.function.DoubleToIntFunction;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
 
 @Getter
+@Component
 public class Cat implements Pet {
     private final String name;
-
-    public Cat(String name) {
+    public Cat(@Value("${cat.name}") String name) {
         this.name = name;
     }
 
